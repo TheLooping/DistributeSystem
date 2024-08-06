@@ -233,8 +233,8 @@ void TaskResult::__set_type(const ResponseType::type val) {
   this->type = val;
 }
 
-void TaskResult::__set_rs_loc(const std::vector<std::string> & val) {
-  this->rs_loc = val;
+void TaskResult::__set_result_location(const std::vector<std::string> & val) {
+  this->result_location = val;
 }
 std::ostream& operator<<(std::ostream& out, const TaskResult& obj)
 {
@@ -285,19 +285,19 @@ uint32_t TaskResult::read(::apache::thrift::protocol::TProtocol* iprot) {
       case 3:
         if (ftype == ::apache::thrift::protocol::T_LIST) {
           {
-            this->rs_loc.clear();
+            this->result_location.clear();
             uint32_t _size10;
             ::apache::thrift::protocol::TType _etype13;
             xfer += iprot->readListBegin(_etype13, _size10);
-            this->rs_loc.resize(_size10);
+            this->result_location.resize(_size10);
             uint32_t _i14;
             for (_i14 = 0; _i14 < _size10; ++_i14)
             {
-              xfer += iprot->readString(this->rs_loc[_i14]);
+              xfer += iprot->readString(this->result_location[_i14]);
             }
             xfer += iprot->readListEnd();
           }
-          this->__isset.rs_loc = true;
+          this->__isset.result_location = true;
         } else {
           xfer += iprot->skip(ftype);
         }
@@ -327,11 +327,11 @@ uint32_t TaskResult::write(::apache::thrift::protocol::TProtocol* oprot) const {
   xfer += oprot->writeI32(static_cast<int32_t>(this->type));
   xfer += oprot->writeFieldEnd();
 
-  xfer += oprot->writeFieldBegin("rs_loc", ::apache::thrift::protocol::T_LIST, 3);
+  xfer += oprot->writeFieldBegin("result_location", ::apache::thrift::protocol::T_LIST, 3);
   {
-    xfer += oprot->writeListBegin(::apache::thrift::protocol::T_STRING, static_cast<uint32_t>(this->rs_loc.size()));
+    xfer += oprot->writeListBegin(::apache::thrift::protocol::T_STRING, static_cast<uint32_t>(this->result_location.size()));
     std::vector<std::string> ::const_iterator _iter15;
-    for (_iter15 = this->rs_loc.begin(); _iter15 != this->rs_loc.end(); ++_iter15)
+    for (_iter15 = this->result_location.begin(); _iter15 != this->result_location.end(); ++_iter15)
     {
       xfer += oprot->writeString((*_iter15));
     }
@@ -348,20 +348,20 @@ void swap(TaskResult &a, TaskResult &b) {
   using ::std::swap;
   swap(a.id, b.id);
   swap(a.type, b.type);
-  swap(a.rs_loc, b.rs_loc);
+  swap(a.result_location, b.result_location);
   swap(a.__isset, b.__isset);
 }
 
 TaskResult::TaskResult(const TaskResult& other16) {
   id = other16.id;
   type = other16.type;
-  rs_loc = other16.rs_loc;
+  result_location = other16.result_location;
   __isset = other16.__isset;
 }
 TaskResult& TaskResult::operator=(const TaskResult& other17) {
   id = other17.id;
   type = other17.type;
-  rs_loc = other17.rs_loc;
+  result_location = other17.result_location;
   __isset = other17.__isset;
   return *this;
 }
@@ -370,7 +370,7 @@ void TaskResult::printTo(std::ostream& out) const {
   out << "TaskResult(";
   out << "id=" << to_string(id);
   out << ", " << "type=" << to_string(type);
-  out << ", " << "rs_loc=" << to_string(rs_loc);
+  out << ", " << "result_location=" << to_string(result_location);
   out << ")";
 }
 

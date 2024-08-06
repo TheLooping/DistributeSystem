@@ -22,9 +22,9 @@
 class MasterIf {
  public:
   virtual ~MasterIf() {}
-  virtual int32_t assignId() = 0;
-  virtual void assignTask(TaskResponse& _return) = 0;
-  virtual void commitTask(const TaskResult& result) = 0;
+  virtual int32_t AssignId() = 0;
+  virtual void AssignTask(TaskResponse& _return) = 0;
+  virtual void CommitTask(const TaskResult& result) = 0;
 };
 
 class MasterIfFactory {
@@ -54,38 +54,38 @@ class MasterIfSingletonFactory : virtual public MasterIfFactory {
 class MasterNull : virtual public MasterIf {
  public:
   virtual ~MasterNull() {}
-  int32_t assignId() override {
+  int32_t AssignId() override {
     int32_t _return = 0;
     return _return;
   }
-  void assignTask(TaskResponse& /* _return */) override {
+  void AssignTask(TaskResponse& /* _return */) override {
     return;
   }
-  void commitTask(const TaskResult& /* result */) override {
+  void CommitTask(const TaskResult& /* result */) override {
     return;
   }
 };
 
 
-class Master_assignId_args {
+class Master_AssignId_args {
  public:
 
-  Master_assignId_args(const Master_assignId_args&) noexcept;
-  Master_assignId_args& operator=(const Master_assignId_args&) noexcept;
-  Master_assignId_args() noexcept {
+  Master_AssignId_args(const Master_AssignId_args&) noexcept;
+  Master_AssignId_args& operator=(const Master_AssignId_args&) noexcept;
+  Master_AssignId_args() noexcept {
   }
 
-  virtual ~Master_assignId_args() noexcept;
+  virtual ~Master_AssignId_args() noexcept;
 
-  bool operator == (const Master_assignId_args & /* rhs */) const
+  bool operator == (const Master_AssignId_args & /* rhs */) const
   {
     return true;
   }
-  bool operator != (const Master_assignId_args &rhs) const {
+  bool operator != (const Master_AssignId_args &rhs) const {
     return !(*this == rhs);
   }
 
-  bool operator < (const Master_assignId_args & ) const;
+  bool operator < (const Master_AssignId_args & ) const;
 
   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
@@ -93,92 +93,92 @@ class Master_assignId_args {
 };
 
 
-class Master_assignId_pargs {
+class Master_AssignId_pargs {
  public:
 
 
-  virtual ~Master_assignId_pargs() noexcept;
+  virtual ~Master_AssignId_pargs() noexcept;
 
   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
 
 };
 
-typedef struct _Master_assignId_result__isset {
-  _Master_assignId_result__isset() : success(false) {}
+typedef struct _Master_AssignId_result__isset {
+  _Master_AssignId_result__isset() : success(false) {}
   bool success :1;
-} _Master_assignId_result__isset;
+} _Master_AssignId_result__isset;
 
-class Master_assignId_result {
+class Master_AssignId_result {
  public:
 
-  Master_assignId_result(const Master_assignId_result&) noexcept;
-  Master_assignId_result& operator=(const Master_assignId_result&) noexcept;
-  Master_assignId_result() noexcept
+  Master_AssignId_result(const Master_AssignId_result&) noexcept;
+  Master_AssignId_result& operator=(const Master_AssignId_result&) noexcept;
+  Master_AssignId_result() noexcept
                          : success(0) {
   }
 
-  virtual ~Master_assignId_result() noexcept;
+  virtual ~Master_AssignId_result() noexcept;
   int32_t success;
 
-  _Master_assignId_result__isset __isset;
+  _Master_AssignId_result__isset __isset;
 
   void __set_success(const int32_t val);
 
-  bool operator == (const Master_assignId_result & rhs) const
+  bool operator == (const Master_AssignId_result & rhs) const
   {
     if (!(success == rhs.success))
       return false;
     return true;
   }
-  bool operator != (const Master_assignId_result &rhs) const {
+  bool operator != (const Master_AssignId_result &rhs) const {
     return !(*this == rhs);
   }
 
-  bool operator < (const Master_assignId_result & ) const;
+  bool operator < (const Master_AssignId_result & ) const;
 
   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
 
 };
 
-typedef struct _Master_assignId_presult__isset {
-  _Master_assignId_presult__isset() : success(false) {}
+typedef struct _Master_AssignId_presult__isset {
+  _Master_AssignId_presult__isset() : success(false) {}
   bool success :1;
-} _Master_assignId_presult__isset;
+} _Master_AssignId_presult__isset;
 
-class Master_assignId_presult {
+class Master_AssignId_presult {
  public:
 
 
-  virtual ~Master_assignId_presult() noexcept;
+  virtual ~Master_AssignId_presult() noexcept;
   int32_t* success;
 
-  _Master_assignId_presult__isset __isset;
+  _Master_AssignId_presult__isset __isset;
 
   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
 
 };
 
 
-class Master_assignTask_args {
+class Master_AssignTask_args {
  public:
 
-  Master_assignTask_args(const Master_assignTask_args&) noexcept;
-  Master_assignTask_args& operator=(const Master_assignTask_args&) noexcept;
-  Master_assignTask_args() noexcept {
+  Master_AssignTask_args(const Master_AssignTask_args&) noexcept;
+  Master_AssignTask_args& operator=(const Master_AssignTask_args&) noexcept;
+  Master_AssignTask_args() noexcept {
   }
 
-  virtual ~Master_assignTask_args() noexcept;
+  virtual ~Master_AssignTask_args() noexcept;
 
-  bool operator == (const Master_assignTask_args & /* rhs */) const
+  bool operator == (const Master_AssignTask_args & /* rhs */) const
   {
     return true;
   }
-  bool operator != (const Master_assignTask_args &rhs) const {
+  bool operator != (const Master_AssignTask_args &rhs) const {
     return !(*this == rhs);
   }
 
-  bool operator < (const Master_assignTask_args & ) const;
+  bool operator < (const Master_AssignTask_args & ) const;
 
   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
@@ -186,102 +186,102 @@ class Master_assignTask_args {
 };
 
 
-class Master_assignTask_pargs {
+class Master_AssignTask_pargs {
  public:
 
 
-  virtual ~Master_assignTask_pargs() noexcept;
+  virtual ~Master_AssignTask_pargs() noexcept;
 
   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
 
 };
 
-typedef struct _Master_assignTask_result__isset {
-  _Master_assignTask_result__isset() : success(false) {}
+typedef struct _Master_AssignTask_result__isset {
+  _Master_AssignTask_result__isset() : success(false) {}
   bool success :1;
-} _Master_assignTask_result__isset;
+} _Master_AssignTask_result__isset;
 
-class Master_assignTask_result {
+class Master_AssignTask_result {
  public:
 
-  Master_assignTask_result(const Master_assignTask_result&);
-  Master_assignTask_result& operator=(const Master_assignTask_result&);
-  Master_assignTask_result() noexcept {
+  Master_AssignTask_result(const Master_AssignTask_result&);
+  Master_AssignTask_result& operator=(const Master_AssignTask_result&);
+  Master_AssignTask_result() noexcept {
   }
 
-  virtual ~Master_assignTask_result() noexcept;
+  virtual ~Master_AssignTask_result() noexcept;
   TaskResponse success;
 
-  _Master_assignTask_result__isset __isset;
+  _Master_AssignTask_result__isset __isset;
 
   void __set_success(const TaskResponse& val);
 
-  bool operator == (const Master_assignTask_result & rhs) const
+  bool operator == (const Master_AssignTask_result & rhs) const
   {
     if (!(success == rhs.success))
       return false;
     return true;
   }
-  bool operator != (const Master_assignTask_result &rhs) const {
+  bool operator != (const Master_AssignTask_result &rhs) const {
     return !(*this == rhs);
   }
 
-  bool operator < (const Master_assignTask_result & ) const;
+  bool operator < (const Master_AssignTask_result & ) const;
 
   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
 
 };
 
-typedef struct _Master_assignTask_presult__isset {
-  _Master_assignTask_presult__isset() : success(false) {}
+typedef struct _Master_AssignTask_presult__isset {
+  _Master_AssignTask_presult__isset() : success(false) {}
   bool success :1;
-} _Master_assignTask_presult__isset;
+} _Master_AssignTask_presult__isset;
 
-class Master_assignTask_presult {
+class Master_AssignTask_presult {
  public:
 
 
-  virtual ~Master_assignTask_presult() noexcept;
+  virtual ~Master_AssignTask_presult() noexcept;
   TaskResponse* success;
 
-  _Master_assignTask_presult__isset __isset;
+  _Master_AssignTask_presult__isset __isset;
 
   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
 
 };
 
-typedef struct _Master_commitTask_args__isset {
-  _Master_commitTask_args__isset() : result(false) {}
+typedef struct _Master_CommitTask_args__isset {
+  _Master_CommitTask_args__isset() : result(false) {}
   bool result :1;
-} _Master_commitTask_args__isset;
+} _Master_CommitTask_args__isset;
 
-class Master_commitTask_args {
+class Master_CommitTask_args {
  public:
 
-  Master_commitTask_args(const Master_commitTask_args&);
-  Master_commitTask_args& operator=(const Master_commitTask_args&);
-  Master_commitTask_args() noexcept {
+  Master_CommitTask_args(const Master_CommitTask_args&);
+  Master_CommitTask_args& operator=(const Master_CommitTask_args&);
+  Master_CommitTask_args() noexcept {
   }
 
-  virtual ~Master_commitTask_args() noexcept;
+  virtual ~Master_CommitTask_args() noexcept;
   TaskResult result;
 
-  _Master_commitTask_args__isset __isset;
+  _Master_CommitTask_args__isset __isset;
 
   void __set_result(const TaskResult& val);
 
-  bool operator == (const Master_commitTask_args & rhs) const
+  bool operator == (const Master_CommitTask_args & rhs) const
   {
     if (!(result == rhs.result))
       return false;
     return true;
   }
-  bool operator != (const Master_commitTask_args &rhs) const {
+  bool operator != (const Master_CommitTask_args &rhs) const {
     return !(*this == rhs);
   }
 
-  bool operator < (const Master_commitTask_args & ) const;
+  bool operator < (const Master_CommitTask_args & ) const;
 
   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
@@ -289,11 +289,11 @@ class Master_commitTask_args {
 };
 
 
-class Master_commitTask_pargs {
+class Master_CommitTask_pargs {
  public:
 
 
-  virtual ~Master_commitTask_pargs() noexcept;
+  virtual ~Master_CommitTask_pargs() noexcept;
   const TaskResult* result;
 
   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
@@ -301,25 +301,25 @@ class Master_commitTask_pargs {
 };
 
 
-class Master_commitTask_result {
+class Master_CommitTask_result {
  public:
 
-  Master_commitTask_result(const Master_commitTask_result&) noexcept;
-  Master_commitTask_result& operator=(const Master_commitTask_result&) noexcept;
-  Master_commitTask_result() noexcept {
+  Master_CommitTask_result(const Master_CommitTask_result&) noexcept;
+  Master_CommitTask_result& operator=(const Master_CommitTask_result&) noexcept;
+  Master_CommitTask_result() noexcept {
   }
 
-  virtual ~Master_commitTask_result() noexcept;
+  virtual ~Master_CommitTask_result() noexcept;
 
-  bool operator == (const Master_commitTask_result & /* rhs */) const
+  bool operator == (const Master_CommitTask_result & /* rhs */) const
   {
     return true;
   }
-  bool operator != (const Master_commitTask_result &rhs) const {
+  bool operator != (const Master_CommitTask_result &rhs) const {
     return !(*this == rhs);
   }
 
-  bool operator < (const Master_commitTask_result & ) const;
+  bool operator < (const Master_CommitTask_result & ) const;
 
   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
@@ -327,11 +327,11 @@ class Master_commitTask_result {
 };
 
 
-class Master_commitTask_presult {
+class Master_CommitTask_presult {
  public:
 
 
-  virtual ~Master_commitTask_presult() noexcept;
+  virtual ~Master_CommitTask_presult() noexcept;
 
   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
 
@@ -362,15 +362,15 @@ class MasterClient : virtual public MasterIf {
   std::shared_ptr< ::apache::thrift::protocol::TProtocol> getOutputProtocol() {
     return poprot_;
   }
-  int32_t assignId() override;
-  void send_assignId();
-  int32_t recv_assignId();
-  void assignTask(TaskResponse& _return) override;
-  void send_assignTask();
-  void recv_assignTask(TaskResponse& _return);
-  void commitTask(const TaskResult& result) override;
-  void send_commitTask(const TaskResult& result);
-  void recv_commitTask();
+  int32_t AssignId() override;
+  void send_AssignId();
+  int32_t recv_AssignId();
+  void AssignTask(TaskResponse& _return) override;
+  void send_AssignTask();
+  void recv_AssignTask(TaskResponse& _return);
+  void CommitTask(const TaskResult& result) override;
+  void send_CommitTask(const TaskResult& result);
+  void recv_CommitTask();
  protected:
   std::shared_ptr< ::apache::thrift::protocol::TProtocol> piprot_;
   std::shared_ptr< ::apache::thrift::protocol::TProtocol> poprot_;
@@ -386,15 +386,15 @@ class MasterProcessor : public ::apache::thrift::TDispatchProcessor {
   typedef  void (MasterProcessor::*ProcessFunction)(int32_t, ::apache::thrift::protocol::TProtocol*, ::apache::thrift::protocol::TProtocol*, void*);
   typedef std::map<std::string, ProcessFunction> ProcessMap;
   ProcessMap processMap_;
-  void process_assignId(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext);
-  void process_assignTask(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext);
-  void process_commitTask(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext);
+  void process_AssignId(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext);
+  void process_AssignTask(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext);
+  void process_CommitTask(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext);
  public:
   MasterProcessor(::std::shared_ptr<MasterIf> iface) :
     iface_(iface) {
-    processMap_["assignId"] = &MasterProcessor::process_assignId;
-    processMap_["assignTask"] = &MasterProcessor::process_assignTask;
-    processMap_["commitTask"] = &MasterProcessor::process_commitTask;
+    processMap_["AssignId"] = &MasterProcessor::process_AssignId;
+    processMap_["AssignTask"] = &MasterProcessor::process_AssignTask;
+    processMap_["CommitTask"] = &MasterProcessor::process_CommitTask;
   }
 
   virtual ~MasterProcessor() {}
@@ -423,32 +423,32 @@ class MasterMultiface : virtual public MasterIf {
     ifaces_.push_back(iface);
   }
  public:
-  int32_t assignId() override {
+  int32_t AssignId() override {
     size_t sz = ifaces_.size();
     size_t i = 0;
     for (; i < (sz - 1); ++i) {
-      ifaces_[i]->assignId();
+      ifaces_[i]->AssignId();
     }
-    return ifaces_[i]->assignId();
+    return ifaces_[i]->AssignId();
   }
 
-  void assignTask(TaskResponse& _return) override {
+  void AssignTask(TaskResponse& _return) override {
     size_t sz = ifaces_.size();
     size_t i = 0;
     for (; i < (sz - 1); ++i) {
-      ifaces_[i]->assignTask(_return);
+      ifaces_[i]->AssignTask(_return);
     }
-    ifaces_[i]->assignTask(_return);
+    ifaces_[i]->AssignTask(_return);
     return;
   }
 
-  void commitTask(const TaskResult& result) override {
+  void CommitTask(const TaskResult& result) override {
     size_t sz = ifaces_.size();
     size_t i = 0;
     for (; i < (sz - 1); ++i) {
-      ifaces_[i]->commitTask(result);
+      ifaces_[i]->CommitTask(result);
     }
-    ifaces_[i]->commitTask(result);
+    ifaces_[i]->CommitTask(result);
   }
 
 };
@@ -483,15 +483,15 @@ class MasterConcurrentClient : virtual public MasterIf {
   std::shared_ptr< ::apache::thrift::protocol::TProtocol> getOutputProtocol() {
     return poprot_;
   }
-  int32_t assignId() override;
-  int32_t send_assignId();
-  int32_t recv_assignId(const int32_t seqid);
-  void assignTask(TaskResponse& _return) override;
-  int32_t send_assignTask();
-  void recv_assignTask(TaskResponse& _return, const int32_t seqid);
-  void commitTask(const TaskResult& result) override;
-  int32_t send_commitTask(const TaskResult& result);
-  void recv_commitTask(const int32_t seqid);
+  int32_t AssignId() override;
+  int32_t send_AssignId();
+  int32_t recv_AssignId(const int32_t seqid);
+  void AssignTask(TaskResponse& _return) override;
+  int32_t send_AssignTask();
+  void recv_AssignTask(TaskResponse& _return, const int32_t seqid);
+  void CommitTask(const TaskResult& result) override;
+  int32_t send_CommitTask(const TaskResult& result);
+  void recv_CommitTask(const int32_t seqid);
  protected:
   std::shared_ptr< ::apache::thrift::protocol::TProtocol> piprot_;
   std::shared_ptr< ::apache::thrift::protocol::TProtocol> poprot_;

@@ -108,10 +108,10 @@ void swap(TaskResponse &a, TaskResponse &b);
 std::ostream& operator<<(std::ostream& out, const TaskResponse& obj);
 
 typedef struct _TaskResult__isset {
-  _TaskResult__isset() : id(false), type(false), rs_loc(false) {}
+  _TaskResult__isset() : id(false), type(false), result_location(false) {}
   bool id :1;
   bool type :1;
-  bool rs_loc :1;
+  bool result_location :1;
 } _TaskResult__isset;
 
 class TaskResult : public virtual ::apache::thrift::TBase {
@@ -131,7 +131,7 @@ class TaskResult : public virtual ::apache::thrift::TBase {
    * @see ResponseType
    */
   ResponseType::type type;
-  std::vector<std::string>  rs_loc;
+  std::vector<std::string>  result_location;
 
   _TaskResult__isset __isset;
 
@@ -139,7 +139,7 @@ class TaskResult : public virtual ::apache::thrift::TBase {
 
   void __set_type(const ResponseType::type val);
 
-  void __set_rs_loc(const std::vector<std::string> & val);
+  void __set_result_location(const std::vector<std::string> & val);
 
   bool operator == (const TaskResult & rhs) const
   {
@@ -147,7 +147,7 @@ class TaskResult : public virtual ::apache::thrift::TBase {
       return false;
     if (!(type == rhs.type))
       return false;
-    if (!(rs_loc == rhs.rs_loc))
+    if (!(result_location == rhs.result_location))
       return false;
     return true;
   }

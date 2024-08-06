@@ -18,19 +18,19 @@ class MasterHandler : virtual public MasterIf {
     // Your initialization goes here
   }
 
-  int32_t assignId() {
+  int32_t AssignId() {
     // Your implementation goes here
-    printf("assignId\n");
+    printf("AssignId\n");
   }
 
-  void assignTask(TaskResponse& _return) {
+  void AssignTask(TaskResponse& _return) {
     // Your implementation goes here
-    printf("assignTask\n");
+    printf("AssignTask\n");
   }
 
-  void commitTask(const TaskResult& result) {
+  void CommitTask(const TaskResult& result) {
     // Your implementation goes here
-    printf("commitTask\n");
+    printf("CommitTask\n");
   }
 
 };

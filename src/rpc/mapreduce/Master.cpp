@@ -9,11 +9,11 @@
 
 
 
-Master_assignId_args::~Master_assignId_args() noexcept {
+Master_AssignId_args::~Master_AssignId_args() noexcept {
 }
 
 
-uint32_t Master_assignId_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t Master_AssignId_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   ::apache::thrift::protocol::TInputRecursionTracker tracker(*iprot);
   uint32_t xfer = 0;
@@ -41,10 +41,10 @@ uint32_t Master_assignId_args::read(::apache::thrift::protocol::TProtocol* iprot
   return xfer;
 }
 
-uint32_t Master_assignId_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t Master_AssignId_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
   ::apache::thrift::protocol::TOutputRecursionTracker tracker(*oprot);
-  xfer += oprot->writeStructBegin("Master_assignId_args");
+  xfer += oprot->writeStructBegin("Master_AssignId_args");
 
   xfer += oprot->writeFieldStop();
   xfer += oprot->writeStructEnd();
@@ -52,14 +52,14 @@ uint32_t Master_assignId_args::write(::apache::thrift::protocol::TProtocol* opro
 }
 
 
-Master_assignId_pargs::~Master_assignId_pargs() noexcept {
+Master_AssignId_pargs::~Master_AssignId_pargs() noexcept {
 }
 
 
-uint32_t Master_assignId_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t Master_AssignId_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
   ::apache::thrift::protocol::TOutputRecursionTracker tracker(*oprot);
-  xfer += oprot->writeStructBegin("Master_assignId_pargs");
+  xfer += oprot->writeStructBegin("Master_AssignId_pargs");
 
   xfer += oprot->writeFieldStop();
   xfer += oprot->writeStructEnd();
@@ -67,11 +67,11 @@ uint32_t Master_assignId_pargs::write(::apache::thrift::protocol::TProtocol* opr
 }
 
 
-Master_assignId_result::~Master_assignId_result() noexcept {
+Master_AssignId_result::~Master_AssignId_result() noexcept {
 }
 
 
-uint32_t Master_assignId_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t Master_AssignId_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   ::apache::thrift::protocol::TInputRecursionTracker tracker(*iprot);
   uint32_t xfer = 0;
@@ -112,11 +112,11 @@ uint32_t Master_assignId_result::read(::apache::thrift::protocol::TProtocol* ipr
   return xfer;
 }
 
-uint32_t Master_assignId_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t Master_AssignId_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("Master_assignId_result");
+  xfer += oprot->writeStructBegin("Master_AssignId_result");
 
   if (this->__isset.success) {
     xfer += oprot->writeFieldBegin("success", ::apache::thrift::protocol::T_I32, 0);
@@ -129,11 +129,11 @@ uint32_t Master_assignId_result::write(::apache::thrift::protocol::TProtocol* op
 }
 
 
-Master_assignId_presult::~Master_assignId_presult() noexcept {
+Master_AssignId_presult::~Master_AssignId_presult() noexcept {
 }
 
 
-uint32_t Master_assignId_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t Master_AssignId_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   ::apache::thrift::protocol::TInputRecursionTracker tracker(*iprot);
   uint32_t xfer = 0;
@@ -175,11 +175,11 @@ uint32_t Master_assignId_presult::read(::apache::thrift::protocol::TProtocol* ip
 }
 
 
-Master_assignTask_args::~Master_assignTask_args() noexcept {
+Master_AssignTask_args::~Master_AssignTask_args() noexcept {
 }
 
 
-uint32_t Master_assignTask_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t Master_AssignTask_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   ::apache::thrift::protocol::TInputRecursionTracker tracker(*iprot);
   uint32_t xfer = 0;
@@ -207,10 +207,10 @@ uint32_t Master_assignTask_args::read(::apache::thrift::protocol::TProtocol* ipr
   return xfer;
 }
 
-uint32_t Master_assignTask_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t Master_AssignTask_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
   ::apache::thrift::protocol::TOutputRecursionTracker tracker(*oprot);
-  xfer += oprot->writeStructBegin("Master_assignTask_args");
+  xfer += oprot->writeStructBegin("Master_AssignTask_args");
 
   xfer += oprot->writeFieldStop();
   xfer += oprot->writeStructEnd();
@@ -218,14 +218,14 @@ uint32_t Master_assignTask_args::write(::apache::thrift::protocol::TProtocol* op
 }
 
 
-Master_assignTask_pargs::~Master_assignTask_pargs() noexcept {
+Master_AssignTask_pargs::~Master_AssignTask_pargs() noexcept {
 }
 
 
-uint32_t Master_assignTask_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t Master_AssignTask_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
   ::apache::thrift::protocol::TOutputRecursionTracker tracker(*oprot);
-  xfer += oprot->writeStructBegin("Master_assignTask_pargs");
+  xfer += oprot->writeStructBegin("Master_AssignTask_pargs");
 
   xfer += oprot->writeFieldStop();
   xfer += oprot->writeStructEnd();
@@ -233,11 +233,11 @@ uint32_t Master_assignTask_pargs::write(::apache::thrift::protocol::TProtocol* o
 }
 
 
-Master_assignTask_result::~Master_assignTask_result() noexcept {
+Master_AssignTask_result::~Master_AssignTask_result() noexcept {
 }
 
 
-uint32_t Master_assignTask_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t Master_AssignTask_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   ::apache::thrift::protocol::TInputRecursionTracker tracker(*iprot);
   uint32_t xfer = 0;
@@ -278,11 +278,11 @@ uint32_t Master_assignTask_result::read(::apache::thrift::protocol::TProtocol* i
   return xfer;
 }
 
-uint32_t Master_assignTask_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t Master_AssignTask_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("Master_assignTask_result");
+  xfer += oprot->writeStructBegin("Master_AssignTask_result");
 
   if (this->__isset.success) {
     xfer += oprot->writeFieldBegin("success", ::apache::thrift::protocol::T_STRUCT, 0);
@@ -295,11 +295,11 @@ uint32_t Master_assignTask_result::write(::apache::thrift::protocol::TProtocol* 
 }
 
 
-Master_assignTask_presult::~Master_assignTask_presult() noexcept {
+Master_AssignTask_presult::~Master_AssignTask_presult() noexcept {
 }
 
 
-uint32_t Master_assignTask_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t Master_AssignTask_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   ::apache::thrift::protocol::TInputRecursionTracker tracker(*iprot);
   uint32_t xfer = 0;
@@ -341,11 +341,11 @@ uint32_t Master_assignTask_presult::read(::apache::thrift::protocol::TProtocol* 
 }
 
 
-Master_commitTask_args::~Master_commitTask_args() noexcept {
+Master_CommitTask_args::~Master_CommitTask_args() noexcept {
 }
 
 
-uint32_t Master_commitTask_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t Master_CommitTask_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   ::apache::thrift::protocol::TInputRecursionTracker tracker(*iprot);
   uint32_t xfer = 0;
@@ -386,10 +386,10 @@ uint32_t Master_commitTask_args::read(::apache::thrift::protocol::TProtocol* ipr
   return xfer;
 }
 
-uint32_t Master_commitTask_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t Master_CommitTask_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
   ::apache::thrift::protocol::TOutputRecursionTracker tracker(*oprot);
-  xfer += oprot->writeStructBegin("Master_commitTask_args");
+  xfer += oprot->writeStructBegin("Master_CommitTask_args");
 
   xfer += oprot->writeFieldBegin("result", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += this->result.write(oprot);
@@ -401,14 +401,14 @@ uint32_t Master_commitTask_args::write(::apache::thrift::protocol::TProtocol* op
 }
 
 
-Master_commitTask_pargs::~Master_commitTask_pargs() noexcept {
+Master_CommitTask_pargs::~Master_CommitTask_pargs() noexcept {
 }
 
 
-uint32_t Master_commitTask_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t Master_CommitTask_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
   ::apache::thrift::protocol::TOutputRecursionTracker tracker(*oprot);
-  xfer += oprot->writeStructBegin("Master_commitTask_pargs");
+  xfer += oprot->writeStructBegin("Master_CommitTask_pargs");
 
   xfer += oprot->writeFieldBegin("result", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->result)).write(oprot);
@@ -420,11 +420,11 @@ uint32_t Master_commitTask_pargs::write(::apache::thrift::protocol::TProtocol* o
 }
 
 
-Master_commitTask_result::~Master_commitTask_result() noexcept {
+Master_CommitTask_result::~Master_CommitTask_result() noexcept {
 }
 
 
-uint32_t Master_commitTask_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t Master_CommitTask_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   ::apache::thrift::protocol::TInputRecursionTracker tracker(*iprot);
   uint32_t xfer = 0;
@@ -452,11 +452,11 @@ uint32_t Master_commitTask_result::read(::apache::thrift::protocol::TProtocol* i
   return xfer;
 }
 
-uint32_t Master_commitTask_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t Master_CommitTask_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("Master_commitTask_result");
+  xfer += oprot->writeStructBegin("Master_CommitTask_result");
 
   xfer += oprot->writeFieldStop();
   xfer += oprot->writeStructEnd();
@@ -464,11 +464,11 @@ uint32_t Master_commitTask_result::write(::apache::thrift::protocol::TProtocol* 
 }
 
 
-Master_commitTask_presult::~Master_commitTask_presult() noexcept {
+Master_CommitTask_presult::~Master_CommitTask_presult() noexcept {
 }
 
 
-uint32_t Master_commitTask_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t Master_CommitTask_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   ::apache::thrift::protocol::TInputRecursionTracker tracker(*iprot);
   uint32_t xfer = 0;
@@ -496,18 +496,18 @@ uint32_t Master_commitTask_presult::read(::apache::thrift::protocol::TProtocol* 
   return xfer;
 }
 
-int32_t MasterClient::assignId()
+int32_t MasterClient::AssignId()
 {
-  send_assignId();
-  return recv_assignId();
+  send_AssignId();
+  return recv_AssignId();
 }
 
-void MasterClient::send_assignId()
+void MasterClient::send_AssignId()
 {
   int32_t cseqid = 0;
-  oprot_->writeMessageBegin("assignId", ::apache::thrift::protocol::T_CALL, cseqid);
+  oprot_->writeMessageBegin("AssignId", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  Master_assignId_pargs args;
+  Master_AssignId_pargs args;
   args.write(oprot_);
 
   oprot_->writeMessageEnd();
@@ -515,7 +515,7 @@ void MasterClient::send_assignId()
   oprot_->getTransport()->flush();
 }
 
-int32_t MasterClient::recv_assignId()
+int32_t MasterClient::recv_AssignId()
 {
 
   int32_t rseqid = 0;
@@ -535,13 +535,13 @@ int32_t MasterClient::recv_assignId()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  if (fname.compare("assignId") != 0) {
+  if (fname.compare("AssignId") != 0) {
     iprot_->skip(::apache::thrift::protocol::T_STRUCT);
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
   int32_t _return;
-  Master_assignId_presult result;
+  Master_AssignId_presult result;
   result.success = &_return;
   result.read(iprot_);
   iprot_->readMessageEnd();
@@ -550,21 +550,21 @@ int32_t MasterClient::recv_assignId()
   if (result.__isset.success) {
     return _return;
   }
-  throw ::apache::thrift::TApplicationException(::apache::thrift::TApplicationException::MISSING_RESULT, "assignId failed: unknown result");
+  throw ::apache::thrift::TApplicationException(::apache::thrift::TApplicationException::MISSING_RESULT, "AssignId failed: unknown result");
 }
 
-void MasterClient::assignTask(TaskResponse& _return)
+void MasterClient::AssignTask(TaskResponse& _return)
 {
-  send_assignTask();
-  recv_assignTask(_return);
+  send_AssignTask();
+  recv_AssignTask(_return);
 }
 
-void MasterClient::send_assignTask()
+void MasterClient::send_AssignTask()
 {
   int32_t cseqid = 0;
-  oprot_->writeMessageBegin("assignTask", ::apache::thrift::protocol::T_CALL, cseqid);
+  oprot_->writeMessageBegin("AssignTask", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  Master_assignTask_pargs args;
+  Master_AssignTask_pargs args;
   args.write(oprot_);
 
   oprot_->writeMessageEnd();
@@ -572,7 +572,7 @@ void MasterClient::send_assignTask()
   oprot_->getTransport()->flush();
 }
 
-void MasterClient::recv_assignTask(TaskResponse& _return)
+void MasterClient::recv_AssignTask(TaskResponse& _return)
 {
 
   int32_t rseqid = 0;
@@ -592,12 +592,12 @@ void MasterClient::recv_assignTask(TaskResponse& _return)
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  if (fname.compare("assignTask") != 0) {
+  if (fname.compare("AssignTask") != 0) {
     iprot_->skip(::apache::thrift::protocol::T_STRUCT);
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  Master_assignTask_presult result;
+  Master_AssignTask_presult result;
   result.success = &_return;
   result.read(iprot_);
   iprot_->readMessageEnd();
@@ -607,21 +607,21 @@ void MasterClient::recv_assignTask(TaskResponse& _return)
     // _return pointer has now been filled
     return;
   }
-  throw ::apache::thrift::TApplicationException(::apache::thrift::TApplicationException::MISSING_RESULT, "assignTask failed: unknown result");
+  throw ::apache::thrift::TApplicationException(::apache::thrift::TApplicationException::MISSING_RESULT, "AssignTask failed: unknown result");
 }
 
-void MasterClient::commitTask(const TaskResult& result)
+void MasterClient::CommitTask(const TaskResult& result)
 {
-  send_commitTask(result);
-  recv_commitTask();
+  send_CommitTask(result);
+  recv_CommitTask();
 }
 
-void MasterClient::send_commitTask(const TaskResult& result)
+void MasterClient::send_CommitTask(const TaskResult& result)
 {
   int32_t cseqid = 0;
-  oprot_->writeMessageBegin("commitTask", ::apache::thrift::protocol::T_CALL, cseqid);
+  oprot_->writeMessageBegin("CommitTask", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  Master_commitTask_pargs args;
+  Master_CommitTask_pargs args;
   args.result = &result;
   args.write(oprot_);
 
@@ -630,7 +630,7 @@ void MasterClient::send_commitTask(const TaskResult& result)
   oprot_->getTransport()->flush();
 }
 
-void MasterClient::recv_commitTask()
+void MasterClient::recv_CommitTask()
 {
 
   int32_t rseqid = 0;
@@ -650,12 +650,12 @@ void MasterClient::recv_commitTask()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  if (fname.compare("commitTask") != 0) {
+  if (fname.compare("CommitTask") != 0) {
     iprot_->skip(::apache::thrift::protocol::T_STRUCT);
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  Master_commitTask_presult result;
+  Master_CommitTask_presult result;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
@@ -682,38 +682,38 @@ bool MasterProcessor::dispatchCall(::apache::thrift::protocol::TProtocol* iprot,
   return true;
 }
 
-void MasterProcessor::process_assignId(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void MasterProcessor::process_AssignId(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = nullptr;
   if (this->eventHandler_.get() != nullptr) {
-    ctx = this->eventHandler_->getContext("Master.assignId", callContext);
+    ctx = this->eventHandler_->getContext("Master.AssignId", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "Master.assignId");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "Master.AssignId");
 
   if (this->eventHandler_.get() != nullptr) {
-    this->eventHandler_->preRead(ctx, "Master.assignId");
+    this->eventHandler_->preRead(ctx, "Master.AssignId");
   }
 
-  Master_assignId_args args;
+  Master_AssignId_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != nullptr) {
-    this->eventHandler_->postRead(ctx, "Master.assignId", bytes);
+    this->eventHandler_->postRead(ctx, "Master.AssignId", bytes);
   }
 
-  Master_assignId_result result;
+  Master_AssignId_result result;
   try {
-    result.success = iface_->assignId();
+    result.success = iface_->AssignId();
     result.__isset.success = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != nullptr) {
-      this->eventHandler_->handlerError(ctx, "Master.assignId");
+      this->eventHandler_->handlerError(ctx, "Master.AssignId");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
-    oprot->writeMessageBegin("assignId", ::apache::thrift::protocol::T_EXCEPTION, seqid);
+    oprot->writeMessageBegin("AssignId", ::apache::thrift::protocol::T_EXCEPTION, seqid);
     x.write(oprot);
     oprot->writeMessageEnd();
     oprot->getTransport()->writeEnd();
@@ -722,52 +722,52 @@ void MasterProcessor::process_assignId(int32_t seqid, ::apache::thrift::protocol
   }
 
   if (this->eventHandler_.get() != nullptr) {
-    this->eventHandler_->preWrite(ctx, "Master.assignId");
+    this->eventHandler_->preWrite(ctx, "Master.AssignId");
   }
 
-  oprot->writeMessageBegin("assignId", ::apache::thrift::protocol::T_REPLY, seqid);
+  oprot->writeMessageBegin("AssignId", ::apache::thrift::protocol::T_REPLY, seqid);
   result.write(oprot);
   oprot->writeMessageEnd();
   bytes = oprot->getTransport()->writeEnd();
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != nullptr) {
-    this->eventHandler_->postWrite(ctx, "Master.assignId", bytes);
+    this->eventHandler_->postWrite(ctx, "Master.AssignId", bytes);
   }
 }
 
-void MasterProcessor::process_assignTask(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void MasterProcessor::process_AssignTask(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = nullptr;
   if (this->eventHandler_.get() != nullptr) {
-    ctx = this->eventHandler_->getContext("Master.assignTask", callContext);
+    ctx = this->eventHandler_->getContext("Master.AssignTask", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "Master.assignTask");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "Master.AssignTask");
 
   if (this->eventHandler_.get() != nullptr) {
-    this->eventHandler_->preRead(ctx, "Master.assignTask");
+    this->eventHandler_->preRead(ctx, "Master.AssignTask");
   }
 
-  Master_assignTask_args args;
+  Master_AssignTask_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != nullptr) {
-    this->eventHandler_->postRead(ctx, "Master.assignTask", bytes);
+    this->eventHandler_->postRead(ctx, "Master.AssignTask", bytes);
   }
 
-  Master_assignTask_result result;
+  Master_AssignTask_result result;
   try {
-    iface_->assignTask(result.success);
+    iface_->AssignTask(result.success);
     result.__isset.success = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != nullptr) {
-      this->eventHandler_->handlerError(ctx, "Master.assignTask");
+      this->eventHandler_->handlerError(ctx, "Master.AssignTask");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
-    oprot->writeMessageBegin("assignTask", ::apache::thrift::protocol::T_EXCEPTION, seqid);
+    oprot->writeMessageBegin("AssignTask", ::apache::thrift::protocol::T_EXCEPTION, seqid);
     x.write(oprot);
     oprot->writeMessageEnd();
     oprot->getTransport()->writeEnd();
@@ -776,51 +776,51 @@ void MasterProcessor::process_assignTask(int32_t seqid, ::apache::thrift::protoc
   }
 
   if (this->eventHandler_.get() != nullptr) {
-    this->eventHandler_->preWrite(ctx, "Master.assignTask");
+    this->eventHandler_->preWrite(ctx, "Master.AssignTask");
   }
 
-  oprot->writeMessageBegin("assignTask", ::apache::thrift::protocol::T_REPLY, seqid);
+  oprot->writeMessageBegin("AssignTask", ::apache::thrift::protocol::T_REPLY, seqid);
   result.write(oprot);
   oprot->writeMessageEnd();
   bytes = oprot->getTransport()->writeEnd();
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != nullptr) {
-    this->eventHandler_->postWrite(ctx, "Master.assignTask", bytes);
+    this->eventHandler_->postWrite(ctx, "Master.AssignTask", bytes);
   }
 }
 
-void MasterProcessor::process_commitTask(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void MasterProcessor::process_CommitTask(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = nullptr;
   if (this->eventHandler_.get() != nullptr) {
-    ctx = this->eventHandler_->getContext("Master.commitTask", callContext);
+    ctx = this->eventHandler_->getContext("Master.CommitTask", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "Master.commitTask");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "Master.CommitTask");
 
   if (this->eventHandler_.get() != nullptr) {
-    this->eventHandler_->preRead(ctx, "Master.commitTask");
+    this->eventHandler_->preRead(ctx, "Master.CommitTask");
   }
 
-  Master_commitTask_args args;
+  Master_CommitTask_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != nullptr) {
-    this->eventHandler_->postRead(ctx, "Master.commitTask", bytes);
+    this->eventHandler_->postRead(ctx, "Master.CommitTask", bytes);
   }
 
-  Master_commitTask_result result;
+  Master_CommitTask_result result;
   try {
-    iface_->commitTask(args.result);
+    iface_->CommitTask(args.result);
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != nullptr) {
-      this->eventHandler_->handlerError(ctx, "Master.commitTask");
+      this->eventHandler_->handlerError(ctx, "Master.CommitTask");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
-    oprot->writeMessageBegin("commitTask", ::apache::thrift::protocol::T_EXCEPTION, seqid);
+    oprot->writeMessageBegin("CommitTask", ::apache::thrift::protocol::T_EXCEPTION, seqid);
     x.write(oprot);
     oprot->writeMessageEnd();
     oprot->getTransport()->writeEnd();
@@ -829,17 +829,17 @@ void MasterProcessor::process_commitTask(int32_t seqid, ::apache::thrift::protoc
   }
 
   if (this->eventHandler_.get() != nullptr) {
-    this->eventHandler_->preWrite(ctx, "Master.commitTask");
+    this->eventHandler_->preWrite(ctx, "Master.CommitTask");
   }
 
-  oprot->writeMessageBegin("commitTask", ::apache::thrift::protocol::T_REPLY, seqid);
+  oprot->writeMessageBegin("CommitTask", ::apache::thrift::protocol::T_REPLY, seqid);
   result.write(oprot);
   oprot->writeMessageEnd();
   bytes = oprot->getTransport()->writeEnd();
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != nullptr) {
-    this->eventHandler_->postWrite(ctx, "Master.commitTask", bytes);
+    this->eventHandler_->postWrite(ctx, "Master.CommitTask", bytes);
   }
 }
 
@@ -850,19 +850,19 @@ void MasterProcessor::process_commitTask(int32_t seqid, ::apache::thrift::protoc
   return processor;
 }
 
-int32_t MasterConcurrentClient::assignId()
+int32_t MasterConcurrentClient::AssignId()
 {
-  int32_t seqid = send_assignId();
-  return recv_assignId(seqid);
+  int32_t seqid = send_AssignId();
+  return recv_AssignId(seqid);
 }
 
-int32_t MasterConcurrentClient::send_assignId()
+int32_t MasterConcurrentClient::send_AssignId()
 {
   int32_t cseqid = this->sync_->generateSeqId();
   ::apache::thrift::async::TConcurrentSendSentry sentry(this->sync_.get());
-  oprot_->writeMessageBegin("assignId", ::apache::thrift::protocol::T_CALL, cseqid);
+  oprot_->writeMessageBegin("AssignId", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  Master_assignId_pargs args;
+  Master_AssignId_pargs args;
   args.write(oprot_);
 
   oprot_->writeMessageEnd();
@@ -873,7 +873,7 @@ int32_t MasterConcurrentClient::send_assignId()
   return cseqid;
 }
 
-int32_t MasterConcurrentClient::recv_assignId(const int32_t seqid)
+int32_t MasterConcurrentClient::recv_AssignId(const int32_t seqid)
 {
 
   int32_t rseqid = 0;
@@ -902,7 +902,7 @@ int32_t MasterConcurrentClient::recv_assignId(const int32_t seqid)
         iprot_->readMessageEnd();
         iprot_->getTransport()->readEnd();
       }
-      if (fname.compare("assignId") != 0) {
+      if (fname.compare("AssignId") != 0) {
         iprot_->skip(::apache::thrift::protocol::T_STRUCT);
         iprot_->readMessageEnd();
         iprot_->getTransport()->readEnd();
@@ -912,7 +912,7 @@ int32_t MasterConcurrentClient::recv_assignId(const int32_t seqid)
         throw TProtocolException(TProtocolException::INVALID_DATA);
       }
       int32_t _return;
-      Master_assignId_presult result;
+      Master_AssignId_presult result;
       result.success = &_return;
       result.read(iprot_);
       iprot_->readMessageEnd();
@@ -923,7 +923,7 @@ int32_t MasterConcurrentClient::recv_assignId(const int32_t seqid)
         return _return;
       }
       // in a bad state, don't commit
-      throw ::apache::thrift::TApplicationException(::apache::thrift::TApplicationException::MISSING_RESULT, "assignId failed: unknown result");
+      throw ::apache::thrift::TApplicationException(::apache::thrift::TApplicationException::MISSING_RESULT, "AssignId failed: unknown result");
     }
     // seqid != rseqid
     this->sync_->updatePending(fname, mtype, rseqid);
@@ -933,19 +933,19 @@ int32_t MasterConcurrentClient::recv_assignId(const int32_t seqid)
   } // end while(true)
 }
 
-void MasterConcurrentClient::assignTask(TaskResponse& _return)
+void MasterConcurrentClient::AssignTask(TaskResponse& _return)
 {
-  int32_t seqid = send_assignTask();
-  recv_assignTask(_return, seqid);
+  int32_t seqid = send_AssignTask();
+  recv_AssignTask(_return, seqid);
 }
 
-int32_t MasterConcurrentClient::send_assignTask()
+int32_t MasterConcurrentClient::send_AssignTask()
 {
   int32_t cseqid = this->sync_->generateSeqId();
   ::apache::thrift::async::TConcurrentSendSentry sentry(this->sync_.get());
-  oprot_->writeMessageBegin("assignTask", ::apache::thrift::protocol::T_CALL, cseqid);
+  oprot_->writeMessageBegin("AssignTask", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  Master_assignTask_pargs args;
+  Master_AssignTask_pargs args;
   args.write(oprot_);
 
   oprot_->writeMessageEnd();
@@ -956,7 +956,7 @@ int32_t MasterConcurrentClient::send_assignTask()
   return cseqid;
 }
 
-void MasterConcurrentClient::recv_assignTask(TaskResponse& _return, const int32_t seqid)
+void MasterConcurrentClient::recv_AssignTask(TaskResponse& _return, const int32_t seqid)
 {
 
   int32_t rseqid = 0;
@@ -985,7 +985,7 @@ void MasterConcurrentClient::recv_assignTask(TaskResponse& _return, const int32_
         iprot_->readMessageEnd();
         iprot_->getTransport()->readEnd();
       }
-      if (fname.compare("assignTask") != 0) {
+      if (fname.compare("AssignTask") != 0) {
         iprot_->skip(::apache::thrift::protocol::T_STRUCT);
         iprot_->readMessageEnd();
         iprot_->getTransport()->readEnd();
@@ -994,7 +994,7 @@ void MasterConcurrentClient::recv_assignTask(TaskResponse& _return, const int32_
         using ::apache::thrift::protocol::TProtocolException;
         throw TProtocolException(TProtocolException::INVALID_DATA);
       }
-      Master_assignTask_presult result;
+      Master_AssignTask_presult result;
       result.success = &_return;
       result.read(iprot_);
       iprot_->readMessageEnd();
@@ -1006,7 +1006,7 @@ void MasterConcurrentClient::recv_assignTask(TaskResponse& _return, const int32_
         return;
       }
       // in a bad state, don't commit
-      throw ::apache::thrift::TApplicationException(::apache::thrift::TApplicationException::MISSING_RESULT, "assignTask failed: unknown result");
+      throw ::apache::thrift::TApplicationException(::apache::thrift::TApplicationException::MISSING_RESULT, "AssignTask failed: unknown result");
     }
     // seqid != rseqid
     this->sync_->updatePending(fname, mtype, rseqid);
@@ -1016,19 +1016,19 @@ void MasterConcurrentClient::recv_assignTask(TaskResponse& _return, const int32_
   } // end while(true)
 }
 
-void MasterConcurrentClient::commitTask(const TaskResult& result)
+void MasterConcurrentClient::CommitTask(const TaskResult& result)
 {
-  int32_t seqid = send_commitTask(result);
-  recv_commitTask(seqid);
+  int32_t seqid = send_CommitTask(result);
+  recv_CommitTask(seqid);
 }
 
-int32_t MasterConcurrentClient::send_commitTask(const TaskResult& result)
+int32_t MasterConcurrentClient::send_CommitTask(const TaskResult& result)
 {
   int32_t cseqid = this->sync_->generateSeqId();
   ::apache::thrift::async::TConcurrentSendSentry sentry(this->sync_.get());
-  oprot_->writeMessageBegin("commitTask", ::apache::thrift::protocol::T_CALL, cseqid);
+  oprot_->writeMessageBegin("CommitTask", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  Master_commitTask_pargs args;
+  Master_CommitTask_pargs args;
   args.result = &result;
   args.write(oprot_);
 
@@ -1040,7 +1040,7 @@ int32_t MasterConcurrentClient::send_commitTask(const TaskResult& result)
   return cseqid;
 }
 
-void MasterConcurrentClient::recv_commitTask(const int32_t seqid)
+void MasterConcurrentClient::recv_CommitTask(const int32_t seqid)
 {
 
   int32_t rseqid = 0;
@@ -1069,7 +1069,7 @@ void MasterConcurrentClient::recv_commitTask(const int32_t seqid)
         iprot_->readMessageEnd();
         iprot_->getTransport()->readEnd();
       }
-      if (fname.compare("commitTask") != 0) {
+      if (fname.compare("CommitTask") != 0) {
         iprot_->skip(::apache::thrift::protocol::T_STRUCT);
         iprot_->readMessageEnd();
         iprot_->getTransport()->readEnd();
@@ -1078,7 +1078,7 @@ void MasterConcurrentClient::recv_commitTask(const int32_t seqid)
         using ::apache::thrift::protocol::TProtocolException;
         throw TProtocolException(TProtocolException::INVALID_DATA);
       }
-      Master_commitTask_presult result;
+      Master_CommitTask_presult result;
       result.read(iprot_);
       iprot_->readMessageEnd();
       iprot_->getTransport()->readEnd();
